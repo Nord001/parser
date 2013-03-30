@@ -91,7 +91,7 @@ class parser
     function get_random_proxy()
     {
         $count_proxy = count($this->proxy);
-        return $this->proxy[rand(0, $count_proxy)];
+        return $this->proxy[rand(0, $count_proxy-1)];
     }
 
     //--------------------------------------------------------------------------------------------------
